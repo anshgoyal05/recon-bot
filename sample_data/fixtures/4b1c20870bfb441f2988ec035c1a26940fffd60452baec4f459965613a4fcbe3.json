@@ -1,0 +1,114 @@
+{
+  "document_type": "INVOICE",
+  "document_number": "INV-TAC-101",
+  "document_date": "2025-02-19",
+  "po_reference": "PO-2025-007",
+  "supplier_name": "Tata AutoComp Systems Ltd",
+  "supplier_gstin": "27AAACT1234F1Z8",
+  "buyer_name": "Precision Auto Components Pvt Ltd",
+  "buyer_gstin": "27AAACP1234M1Z5",
+  "place_of_supply": "27",
+  "supplier_state_code": "27",
+  "buyer_state_code": "27",
+  "currency": "INR",
+  "vehicle_number": null,
+  "eway_bill_number": null,
+  "line_items": [
+    {
+      "serial_no": 1,
+      "description": "High Tensile Flange Bolt M10x50",
+      "hsn_sac": "7318",
+      "quantity": 100.0,
+      "uom": "PCS",
+      "unit_price": 450.0,
+      "discount": 0.0,
+      "taxable_value": 45000.0,
+      "cgst_rate": 9.0,
+      "cgst_amount": 4050.0,
+      "sgst_rate": 9.0,
+      "sgst_amount": 4050.0,
+      "igst_rate": 0.0,
+      "igst_amount": 0.0,
+      "cess": 0.0,
+      "line_total": 53100.0,
+      "confidence": 0.98,
+      "bbox": {
+        "ymin": 311,
+        "xmin": 107,
+        "ymax": 324,
+        "xmax": 195,
+        "page_number": 1
+      },
+      "page_number": 1
+    },
+    {
+      "serial_no": 2,
+      "description": "Hardened Hex Nut M10 Grade 8",
+      "hsn_sac": "7318",
+      "quantity": 200.0,
+      "uom": "PCS",
+      "unit_price": 120.0,
+      "discount": 0.0,
+      "taxable_value": 24000.0,
+      "cgst_rate": 9.0,
+      "cgst_amount": 2160.0,
+      "sgst_rate": 9.0,
+      "sgst_amount": 2160.0,
+      "igst_rate": 0.0,
+      "igst_amount": 0.0,
+      "cess": 0.0,
+      "line_total": 28320.0,
+      "confidence": 0.98,
+      "bbox": {
+        "ymin": 345,
+        "xmin": 107,
+        "ymax": 359,
+        "xmax": 212,
+        "page_number": 1
+      },
+      "page_number": 1
+    }
+  ],
+  "taxable_total": 69000.0,
+  "cgst_total": 6210.0,
+  "sgst_total": 6210.0,
+  "igst_total": 0.0,
+  "round_off": 0.0,
+  "grand_total": 81420.0,
+  "amount_in_words": null,
+  "field_confidences": {
+    "document_number": 0.99,
+    "supplier_gstin": 0.99,
+    "grand_total": 0.99
+  },
+  "field_bboxes": {
+    "document_number": {
+      "ymin": 87,
+      "xmin": 336,
+      "ymax": 104,
+      "xmax": 435,
+      "page_number": 1
+    },
+    "supplier_gstin": {
+      "ymin": 182,
+      "xmin": 119,
+      "ymax": 197,
+      "xmax": 244,
+      "page_number": 1
+    },
+    "buyer_gstin": {
+      "ymin": 182,
+      "xmin": 560,
+      "ymax": 197,
+      "xmax": 689,
+      "page_number": 1
+    },
+    "grand_total": {
+      "ymin": 820,
+      "xmin": 680,
+      "ymax": 880,
+      "xmax": 950,
+      "page_number": 1
+    }
+  }
+}

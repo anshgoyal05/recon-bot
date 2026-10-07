@@ -1,0 +1,87 @@
+{
+  "document_type": "GOODS_RECEIPT_NOTE",
+  "document_number": "GRN-2025-006",
+  "document_date": "2025-02-22",
+  "po_reference": "PO-2025-006",
+  "supplier_name": "Motherson Automotive Technologies",
+  "supplier_gstin": "27AAACM1234E1Z4",
+  "buyer_name": "Precision Auto Components Pvt Ltd",
+  "buyer_gstin": "27AAACP1234M1Z5",
+  "place_of_supply": "27",
+  "supplier_state_code": "27",
+  "buyer_state_code": "27",
+  "currency": "INR",
+  "vehicle_number": null,
+  "eway_bill_number": null,
+  "line_items": [
+    {
+      "serial_no": 1,
+      "description": "Engine Valve Guide Spec 4",
+      "hsn_sac": "8481",
+      "quantity": 100.0,
+      "uom": "PCS",
+      "unit_price": 500.0,
+      "discount": 0.0,
+      "taxable_value": 50000.0,
+      "cgst_rate": 0.0,
+      "cgst_amount": 0.0,
+      "sgst_rate": 0.0,
+      "sgst_amount": 0.0,
+      "igst_rate": 0.0,
+      "igst_amount": 0.0,
+      "cess": 0.0,
+      "line_total": 50000.0,
+      "confidence": 0.98,
+      "bbox": {
+        "ymin": 272,
+        "xmin": 111,
+        "ymax": 286,
+        "xmax": 209,
+        "page_number": 1
+      },
+      "page_number": 1
+    }
+  ],
+  "taxable_total": 50000.0,
+  "cgst_total": 0.0,
+  "sgst_total": 0.0,
+  "igst_total": 0.0,
+  "round_off": 0.0,
+  "grand_total": 50000.0,
+  "amount_in_words": null,
+  "field_confidences": {
+    "document_number": 0.99,
+    "supplier_gstin": 0.99,
+    "grand_total": 0.99
+  },
+  "field_bboxes": {
+    "document_number": {
+      "ymin": 87,
+      "xmin": 315,
+      "ymax": 104,
+      "xmax": 425,
+      "page_number": 1
+    },
+    "supplier_gstin": {
+      "ymin": 155,
+      "xmin": 192,
+      "ymax": 170,
+      "xmax": 321,
+      "page_number": 1
+    },
+    "buyer_gstin": {
+      "ymin": 200,
+      "xmin": 100,
+      "ymax": 300,
+      "xmax": 400,
+      "page_number": 1
+    },
+    "grand_total": {
+      "ymin": 820,
+      "xmin": 680,
+      "ymax": 880,
+      "xmax": 950,
+      "page_number": 1
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "document_type": "PURCHASE_ORDER",
+  "document_number": "PO-2025-003",
+  "document_date": "2025-02-12",
+  "po_reference": null,
+  "supplier_name": "Sundram Fasteners Ltd",
+  "supplier_gstin": "33AAACS1234D1Z2",
+  "buyer_name": "Precision Auto Components Pvt Ltd",
+  "buyer_gstin": "27AAACP1234M1Z5",
+  "place_of_supply": "27",
+  "supplier_state_code": "33",
+  "buyer_state_code": "27",
+  "currency": "INR",
+  "vehicle_number": null,
+  "eway_bill_number": null,
+  "line_items": [
+    {
+      "serial_no": 1,
+      "description": "Hardened Stud M12x75 High Strength",
+      "hsn_sac": "7318",
+      "quantity": 500.0,
+      "uom": "PCS",
+      "unit_price": 120.0,
+      "discount": 0.0,
+      "taxable_value": 60000.0,
+      "cgst_rate": 0.0,
+      "cgst_amount": 0.0,
+      "sgst_rate": 0.0,
+      "sgst_amount": 0.0,
+      "igst_rate": 18.0,
+      "igst_amount": 10800.0,
+      "cess": 0.0,
+      "line_total": 70800.0,
+      "confidence": 0.98,
+      "bbox": {
+        "ymin": 323,
+        "xmin": 117,
+        "ymax": 337,
+        "xmax": 220,
+        "page_number": 1
+      },
+      "page_number": 1
+    }
+  ],
+  "taxable_total": 60000.0,
+  "cgst_total": 0.0,
+  "sgst_total": 0.0,
+  "igst_total": 10800.0,
+  "round_off": 0.0,
+  "grand_total": 70800.0,
+  "amount_in_words": null,
+  "field_confidences": {
+    "document_number": 0.99,
+    "supplier_gstin": 0.99,
+    "grand_total": 0.99
+  },
+  "field_bboxes": {
+    "document_number": {
+      "ymin": 87,
+      "xmin": 406,
+      "ymax": 104,
+      "xmax": 504,
+      "page_number": 1
+    },
+    "supplier_gstin": {
+      "ymin": 183,
+      "xmin": 560,
+      "ymax": 198,
+      "xmax": 688,
+      "page_number": 1
+    },
+    "buyer_gstin": {
+      "ymin": 183,
+      "xmin": 119,
+      "ymax": 198,
+      "xmax": 248,
+      "page_number": 1
+    },
+    "grand_total": {
+      "ymin": 820,
+      "xmin": 680,
+      "ymax": 880,
+      "xmax": 950,
+      "page_number": 1
+    }
+  }
+}

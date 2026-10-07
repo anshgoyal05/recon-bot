@@ -1,0 +1,188 @@
+{
+  "version": "1.0",
+  "company": "Precision Auto Components Pvt Ltd",
+  "buyer_gstin": "27AAACP1234M1ZG",
+  "sets_count": 8,
+  "sets": [
+    {
+      "id": "set_01",
+      "set_name": "Set 01: Clean Auto Fasteners",
+      "supplier_name": "Tata AutoComp Systems Ltd",
+      "supplier_gstin": "27AAACT1234F1ZR",
+      "po_file": "set_01_clean/PO_2025_001.pdf",
+      "invoice_file": "set_01_clean/INV_TAC_101.pdf",
+      "grn_file": "set_01_clean/GRN_2025_001.pdf",
+      "po_number": "PO-2025-001",
+      "invoice_number": "INV-TAC-101",
+      "grn_number": "GRN-2025-001",
+      "expected_verdict": "MATCHED",
+      "expected_total_at_risk_inr": 0.0,
+      "expected_discrepancies": []
+    },
+    {
+      "id": "set_02",
+      "set_name": "Set 02: Short Quantity Received",
+      "supplier_name": "Bharat Forge Ltd",
+      "supplier_gstin": "27AAACB1234A1ZJ",
+      "po_file": "set_02_short_qty/PO_2025_002.pdf",
+      "invoice_file": "set_02_short_qty/INV_BF_202.pdf",
+      "grn_file": "set_02_short_qty/GRN_2025_002.pdf",
+      "po_number": "PO-2025-002",
+      "invoice_number": "INV-BF-202",
+      "grn_number": "GRN-2025-002",
+      "expected_verdict": "MISMATCH",
+      "expected_total_at_risk_inr": 18880.0,
+      "expected_discrepancies": [
+        {
+          "type": "QUANTITY",
+          "severity": "ERROR",
+          "field": "quantity",
+          "expected": "80.0",
+          "actual": "100.0",
+          "impact_inr": 18880.0,
+          "explanation": "Invoiced quantity (100.0 PCS) exceeds physically received & accepted quantity on GRN (80.0 PCS) by 20.0 PCS."
+        }
+      ]
+    },
+    {
+      "id": "set_03",
+      "set_name": "Set 03: Unit Price Variance",
+      "supplier_name": "Sundram Fasteners Ltd",
+      "supplier_gstin": "33AAACS1234D1Z3",
+      "po_file": "set_03_price_creep/PO_2025_003.pdf",
+      "invoice_file": "set_03_price_creep/INV_SF_303.pdf",
+      "grn_file": "set_03_price_creep/GRN_2025_003.pdf",
+      "po_number": "PO-2025-003",
+      "invoice_number": "INV-SF-303",
+      "grn_number": "GRN-2025-003",
+      "expected_verdict": "MISMATCH",
+      "expected_total_at_risk_inr": 14750.0,
+      "expected_discrepancies": [
+        {
+          "type": "UNIT_PRICE",
+          "severity": "ERROR",
+          "field": "unit_price",
+          "expected": "120.00",
+          "actual": "145.00",
+          "impact_inr": 14750.0,
+          "explanation": "Billed unit price (\u20b9145.00) exceeds agreed PO unit price (\u20b9120.00) by \u20b925.00 (+20.8%)."
+        }
+      ]
+    },
+    {
+      "id": "set_04",
+      "set_name": "Set 04: Intra-State IGST Violation",
+      "supplier_name": "Precision Toolings Pune",
+      "supplier_gstin": "27AABCP5678Q1ZJ",
+      "po_file": "set_04_tax_type/PO_2025_004.pdf",
+      "invoice_file": "set_04_tax_type/INV_MH_404.pdf",
+      "grn_file": "set_04_tax_type/GRN_2025_004.pdf",
+      "po_number": "PO-2025-004",
+      "invoice_number": "INV-MH-404",
+      "grn_number": "GRN-2025-004",
+      "expected_verdict": "MISMATCH",
+      "expected_total_at_risk_inr": 9000.0,
+      "expected_discrepancies": [
+        {
+          "type": "TAX_GST",
+          "severity": "ERROR",
+          "field": "tax_type",
+          "expected": "CGST (9.0%) + SGST (9.0%)",
+          "actual": "IGST (18.0%)",
+          "impact_inr": 9000.0,
+          "explanation": "Intra-state supply (Supplier State 27 \u2194 Place of Supply 27) incorrectly charged IGST. Under Section 7/8 IGST Act, CGST + SGST is legally mandated."
+        }
+      ]
+    },
+    {
+      "id": "set_05",
+      "set_name": "Set 05: Incorrect HSN GST Slab",
+      "supplier_name": "Apex Foundry & Castings Pvt Ltd",
+      "supplier_gstin": "27AAACA9999M1ZR",
+      "po_file": "set_05_wrong_hsn_rate/PO_2025_005.pdf",
+      "invoice_file": "set_05_wrong_hsn_rate/INV_CF_505.pdf",
+      "grn_file": "set_05_wrong_hsn_rate/GRN_2025_005.pdf",
+      "po_number": "PO-2025-005",
+      "invoice_number": "INV-CF-505",
+      "grn_number": "GRN-2025-005",
+      "expected_verdict": "MISMATCH",
+      "expected_total_at_risk_inr": 5400.0,
+      "expected_discrepancies": [
+        {
+          "type": "TAX_GST",
+          "severity": "ERROR",
+          "field": "hsn_rate",
+          "expected": "18.0%",
+          "actual": "12.0%",
+          "impact_inr": 5400.0,
+          "explanation": "GST rate for HSN 7325 (Cast articles of iron/steel) is 18.0% as per statutory HSN rate master for date 2025-02-20, but invoice charged 12.0%."
+        }
+      ]
+    },
+    {
+      "id": "set_06",
+      "set_name": "Set 06: CGST \u2260 SGST Asymmetry",
+      "supplier_name": "Motherson Automotive Technologies",
+      "supplier_gstin": "27AAACM1234E1Z0",
+      "po_file": "set_06_cgst_sgst_mismatch/PO_2025_006.pdf",
+      "invoice_file": "set_06_cgst_sgst_mismatch/INV_MA_606.pdf",
+      "grn_file": "set_06_cgst_sgst_mismatch/GRN_2025_006.pdf",
+      "po_number": "PO-2025-006",
+      "invoice_number": "INV-MA-606",
+      "grn_number": "GRN-2025-006",
+      "expected_verdict": "MISMATCH",
+      "expected_total_at_risk_inr": 700.0,
+      "expected_discrepancies": [
+        {
+          "type": "TAX_GST",
+          "severity": "ERROR",
+          "field": "cgst_sgst_equality",
+          "expected": "CGST \u20b94,500.00 == SGST \u20b94,500.00",
+          "actual": "CGST \u20b94,500.00 != SGST \u20b95,200.00",
+          "impact_inr": 700.0,
+          "explanation": "Intra-state GST rules mandate that CGST and SGST rates and computed amounts must be strictly identical. Discrepancy of \u20b9700.00 detected."
+        }
+      ]
+    },
+    {
+      "id": "set_07",
+      "set_name": "Set 07: Duplicate Invoice Submission",
+      "supplier_name": "Tata AutoComp Systems Ltd",
+      "supplier_gstin": "27AAACT1234F1ZR",
+      "po_file": "set_07_duplicate/PO_2025_007.pdf",
+      "invoice_file": "set_07_duplicate/INV_TAC_101_DUP.pdf",
+      "grn_file": "set_07_duplicate/GRN_2025_007.pdf",
+      "po_number": "PO-2025-007",
+      "invoice_number": "INV-TAC-101",
+      "grn_number": "GRN-2025-007",
+      "expected_verdict": "MISMATCH",
+      "expected_total_at_risk_inr": 81420.0,
+      "expected_discrepancies": [
+        {
+          "type": "DUPLICATE",
+          "severity": "ERROR",
+          "field": "invoice_number",
+          "expected": "Unique Invoice Number",
+          "actual": "INV-TAC-101 already exists for supplier Tata AutoComp Systems Ltd",
+          "impact_inr": 81420.0,
+          "explanation": "Duplicate invoice submission detected: Invoice #INV-TAC-101 was previously billed and processed in Set 01."
+        }
+      ]
+    },
+    {
+      "id": "set_08",
+      "set_name": "Set 08: Multi-Page Engineering Assembly",
+      "supplier_name": "JBM Auto Ltd",
+      "supplier_gstin": "06AAACJ1234G1Z3",
+      "po_file": "set_08_multipage/PO_2025_008.pdf",
+      "invoice_file": "set_08_multipage/INV_JBM_808.pdf",
+      "grn_file": "set_08_multipage/GRN_2025_008.pdf",
+      "po_number": "PO-2025-008",
+      "invoice_number": "INV-JBM-808",
+      "grn_number": "GRN-2025-008",
+      "expected_verdict": "MATCHED",
+      "expected_total_at_risk_inr": 0.0,
+      "expected_discrepancies": []
+    }
+  ]
+}

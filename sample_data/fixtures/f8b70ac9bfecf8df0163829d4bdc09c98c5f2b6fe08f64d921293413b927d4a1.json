@@ -1,0 +1,87 @@
+{
+  "document_type": "INVOICE",
+  "document_number": "INV-CF-505",
+  "document_date": "2025-02-20",
+  "po_reference": "PO-2025-005",
+  "supplier_name": "Apex Foundry & Castings Pvt Ltd",
+  "supplier_gstin": "27AAACA9999M1ZR",
+  "buyer_name": "Precision Auto Components Pvt Ltd",
+  "buyer_gstin": "27AAACP1234M1ZG",
+  "place_of_supply": "27",
+  "supplier_state_code": "27",
+  "buyer_state_code": "27",
+  "currency": "INR",
+  "vehicle_number": null,
+  "eway_bill_number": null,
+  "line_items": [
+    {
+      "serial_no": 1,
+      "description": "Machined Cast Iron Bearing Housing",
+      "hsn_sac": "7325",
+      "quantity": 150.0,
+      "uom": "PCS",
+      "unit_price": 600.0,
+      "discount": 0.0,
+      "taxable_value": 90000.0,
+      "cgst_rate": 6.0,
+      "cgst_amount": 5400.0,
+      "sgst_rate": 6.0,
+      "sgst_amount": 5400.0,
+      "igst_rate": 0.0,
+      "igst_amount": 0.0,
+      "cess": 0.0,
+      "line_total": 100800.0,
+      "confidence": 0.98,
+      "bbox": {
+        "ymin": 311,
+        "xmin": 107,
+        "ymax": 324,
+        "xmax": 202,
+        "page_number": 1
+      },
+      "page_number": 1
+    }
+  ],
+  "taxable_total": 90000.0,
+  "cgst_total": 5400.0,
+  "sgst_total": 5400.0,
+  "igst_total": 0.0,
+  "round_off": 0.0,
+  "grand_total": 100800.0,
+  "amount_in_words": null,
+  "field_confidences": {
+    "document_number": 0.99,
+    "supplier_gstin": 0.99,
+    "grand_total": 0.99
+  },
+  "field_bboxes": {
+    "document_number": {
+      "ymin": 87,
+      "xmin": 342,
+      "ymax": 104,
+      "xmax": 429,
+      "page_number": 1
+    },
+    "supplier_gstin": {
+      "ymin": 182,
+      "xmin": 119,
+      "ymax": 197,
+      "xmax": 250,
+      "page_number": 1
+    },
+    "buyer_gstin": {
+      "ymin": 182,
+      "xmin": 560,
+      "ymax": 197,
+      "xmax": 692,
+      "page_number": 1
+    },
+    "grand_total": {
+      "ymin": 820,
+      "xmin": 680,
+      "ymax": 880,
+      "xmax": 950,
+      "page_number": 1
+    }
+  }
+}
